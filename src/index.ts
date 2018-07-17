@@ -1,5 +1,5 @@
 import sharp from 'sharp'
-import _ from 'lodash'
+import * as _ from 'lodash'
 
 interface Base64Options {
     file: {
