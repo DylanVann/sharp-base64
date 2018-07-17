@@ -1,6 +1,6 @@
 {
   "name": "sharp-base64",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Convert an image to base64 using sharp.",
   "license": "MIT",
   "author": "Dylan Vann <dylan@dylanvann.com>",
