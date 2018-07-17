@@ -2,10 +2,25 @@
   "name": "sharp-base64",
   "version": "1.0.0",
   "description": "Convert an image to base64 using sharp.",
+  "license": "MIT",
+  "author": "Dylan Vann <dylan@dylanvann.com>",
+  "files": [
+    "dist"
+  ],
   "main": "dist/index.js",
   "scripts": {
+    "build": "tsc",
+    "format": "prettier --write 'src/**/*.ts' '*.js'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Dylan Vann",
-  "license": "MIT"
+  "dependencies": {
+    "lodash": "^4.17.10",
+    "sharp": "^0.20.5"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.112",
+    "@types/sharp": "^0.17.9",
+    "prettier": "^1.13.7",
+    "typescript": "^2.9.2"
+  }
 }
