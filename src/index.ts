@@ -1,5 +1,5 @@
-import sharp from 'sharp'
-import * as _ from 'lodash'
+const sharp = require('sharp')
+const _ = require('lodash')
 
 interface Base64Options {
     file: {
