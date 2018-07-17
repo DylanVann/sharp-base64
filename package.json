@@ -1,0 +1,11 @@
+{
+  "name": "sharp-base64",
+  "version": "1.0.0",
+  "description": "Convert an image to base64 using sharp.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dylan Vann",
+  "license": "MIT"
+}
