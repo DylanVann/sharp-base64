@@ -3,9 +3,10 @@ import * as _ from 'lodash'
 
 interface Base64Options {
     file: {
+        id: string
         absolutePath: string
     }
-    options: {
+    options?: {
         width: number
         height: number | undefined
         quality: number
@@ -64,9 +65,10 @@ export async function notMemoizedbase64(rawOptions: Base64Options) {
 
 export const memoizedBase64 = _.memoize(
     notMemoizedbase64,
-    ({ file, args }) => `${file.id}${JSON.stringify(args)}`,
+    ({ file, options }: Base64Options) =>
+        `${file.id}${JSON.stringify(options)}`,
 )
 
-export async function base64(args: Base64Options) {
-    return await memoizedBase64(args)
+export async function base64(options: Base64Options) {
+    return await memoizedBase64(options)
 }
